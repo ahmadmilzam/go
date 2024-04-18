@@ -1,0 +1,31 @@
+app:
+  name: 'ewallet'
+  address: '127.0.0.1'
+  port: '8000'
+  transfer:
+    unregistered:
+      balance_limit: 10000000
+      credit_count_daily_limit: 5
+      credit_count_monthly_limit: 10
+      credit_amount_daily_limit: 10000000
+      credit_amount_monthly_limit: 9000000
+    registered:
+      balance_limit: 10000000
+      credit_count_daily_limit: 10
+      credit_count_monthly_limit: 20
+      credit_amount_daily_limit: 20000000
+      credit_amount_monthly_limit: 40000000
+database:
+  host: 'localhost'
+  name: 'ewallet'
+  username: 'postgres'
+  port: '5432'
+  password: 'password'
+statsd:
+  host: '127.0.0.1'
+  port: '8125'
+datadog:
+  enabled: 'false'
+  env: 'staging'
+  service: 'ewallet'
+  version: '0.0.1'

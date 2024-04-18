@@ -1,0 +1,21 @@
+app:
+  name: 'go-boilerplate'
+  address: '127.0.0.1'
+  port: '8080'
+database:
+  host: '$DB_HOST'
+  name: '$DB_NAME'
+  username: '$DB_USERNAME'
+  port: '$DB_PORT'
+  password: '$DB_PASSWORD'
+statsd:
+  host: '127.0.0.1'
+  port: '8125'
+datadog:
+  enabled: '$ENABLE_DATADOG'
+  env: '$DD_ENV'
+  service: 'go-boilerplate'
+  version: '0.0.1'
+sentry:
+  enabled: '$ENABLE_SENTRY'
+  dsn: '$SENTRY_DSN'

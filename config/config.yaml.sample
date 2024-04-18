@@ -1,0 +1,21 @@
+app:
+  name: 'go-boilerplate'
+  address: '127.0.0.1'
+  port: '8080'
+database:
+  host: 'postgres'
+  name: 'go_boilerplate'
+  username: 'postgres'
+  port: '5432'
+  password: 'root'
+statsd:
+  host: '127.0.0.1'
+  port: '8125'
+datadog:
+  enabled: 'false'
+  env: 'staging'
+  service: 'go-boilerplate'
+  version: '0.0.1'
+sentry:
+  enabled: 'false'
+  dsn: 'https://<key>@sentry.io/<project>'
